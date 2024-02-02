@@ -1,6 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.hide {
+  display: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +65,9 @@ header {
   box-sizing: border-box;
   min-height: 80px;
   padding: 0 15px;
+  transition: 0.5s;
 }
+
 .logo a > img {
   max-width: 100%;
   height: auto;
@@ -73,6 +81,9 @@ header {
   font-size: 0.875rem;
   text-transform: uppercase;
 }
+.connections > a:hover {
+  color: #999;
+}
 .pages {
   display: flex;
   gap: 10px;
@@ -83,6 +94,11 @@ header {
   border-radius: 100px;
   color: #fff;
   text-transform: uppercase;
+  transition: 0.5s;
+}
+.pages > a:hover {
+  color: #673ab7;
+  background-color: #fff;
 }
 .main {
   display: flex;
@@ -124,9 +140,10 @@ form i {
   font-size: 24px;
   margin-left: -40px;
   z-index: 1000;
-  margin-top: 12px;
+  margin-top: 20px;
   color: #6a3dba;
 }
+
 .articles {
   background-color: #f9f7fc;
   padding-top: 140px;
@@ -431,4 +448,10 @@ footer {
 .pages_foot > a {
   color: #818892;
   font-size: 14px;
+}
+.icons a i:hover {
+  color: black;
+}
+.pages_foot a:hover {
+  color: black;
 }
